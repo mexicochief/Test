@@ -20,3 +20,9 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+
+shadowJar {
+    manifest {
+        attributes 'Main-Class': 'java.org.stardust.Main'
+    }
+}
