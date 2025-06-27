@@ -9,6 +9,9 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'chmod +x gradlew'
+                sh 'git add gradlew'
+                sh 'git commit -m "Make gradlew executable"'
+                sh 'git push'
                 sh './gradlew build' // or 'mvn package' or whatever fits your stack
             }
         }

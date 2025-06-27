@@ -24,6 +24,6 @@ public class Main {
                     loadBalancer.routeRequest(request.getParam("message"));
                     request.response().end("message received");
                 })
-                .listen(8080);
+                .listen(8081);
     }
 }
