@@ -11,7 +11,7 @@ pipeline {
                 sh 'chmod +x gradlew'
                 sh 'git add gradlew'
                 sh 'git commit -m "Make gradlew executable"'
-                sh 'git push'
+                sh 'git push --set-upstream origin master'
                 sh './gradlew build' // or 'mvn package' or whatever fits your stack
             }
         }
