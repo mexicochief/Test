@@ -20,9 +20,7 @@ dependencies {
 test {
     useJUnitPlatform()
 }
-
-shadowJar {
-    manifest {
-        attributes 'Main-Class': 'java.org.stardust.Main'
-    }
+application {
+    // Replace this with your real main class (including package name)
+    mainClass = 'org.stardust.Main'
 }
