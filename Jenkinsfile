@@ -15,7 +15,7 @@ pipeline {
         stage('Docker Build') {
             steps {
                 script {
-                    sh 'docker build -t stardust:latest'
+                    sh 'docker build -t stardust:latest .'
                 }
             }
         }
