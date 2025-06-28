@@ -24,3 +24,9 @@ application {
     // Replace this with your real main class (including package name)
     mainClass = 'org.stardust.Main'
 }
+
+shadowJar {
+    archiveBaseName.set('stardust')
+    archiveVersion.set('1.0.0') // or leave empty for no version
+    archiveClassifier.set('')    // optional
+}
