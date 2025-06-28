@@ -24,7 +24,7 @@ pipeline {
             steps {
                 script {
                     sh 'docker rm -f stardust || true'
-                    sh 'docker run -d --name my-app -p 8081:8081 stardust:latest'
+                    sh 'docker run -d --name stardust -p 8081:8081 stardust:latest'
                 }
             }
         }
